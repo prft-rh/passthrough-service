@@ -19,6 +19,6 @@ public class PassthroughController {
 		
 		RestTemplate rest = new RestTemplate();
 		
-		return rest.getForObject("http://" + echoServiceUrl + "/echo?message" + message, String.class);		
+		return rest.getForObject("http://" + echoServiceUrl + "/echo?message=" + message, String.class);		
 	}
 }
