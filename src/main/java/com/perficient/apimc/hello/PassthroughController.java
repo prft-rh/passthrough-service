@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/")
 public class PassthroughController {
 	
-	@Value("echo-service-url")
+	@Value("${echo-service-url}")
 	String echoServiceUrl;
 		
 	@GetMapping("/passthrough")
